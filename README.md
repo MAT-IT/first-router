@@ -1,3 +1,14 @@
+<!-- yarn add react router dom
+     yarn add --dev gh-pages
+     package script:
+     "predeploy":"yarn run build",
+    "deploy":"gh-pages -d build"
+     
+      "Homepage": " https://mat-it.github.io/first-router"
+
+      "yarn deploy"
+      -->
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
