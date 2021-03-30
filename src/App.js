@@ -5,6 +5,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import NotFound from './components/NotFound'
+import Programs from './components/Programs';
 
 
 function App() {
@@ -22,7 +23,9 @@ function App() {
             <li >
               <Link to="/Contact">Contact</Link>
             </li>
-
+            <li>
+              <Link to="/Programs">Programs</Link>
+            </li>
           </ul>
         </nav>
         <hr />
@@ -30,6 +33,7 @@ function App() {
         <Route exact path='/' component={Home} />
         <Route path='/About' component={About} />
         <Route path='/Contact' component={Contact} />
+        <Route path='/Programs' component={Programs}/>
         <Route component={NotFound}/>
         </Switch>
       </BrowserRouter>
