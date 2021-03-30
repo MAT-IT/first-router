@@ -1,9 +1,10 @@
 
 import './App.css';
-import { BrowserRouter, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Route, Link , Switch} from 'react-router-dom'
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
+import NotFound from './components/NotFound'
 
 
 function App() {
@@ -25,11 +26,12 @@ function App() {
           </ul>
         </nav>
         <hr />
+        <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/About' component={About} />
         <Route path='/Contact' component={Contact} />
-
-
+        <Route component={NotFound}/>
+        </Switch>
       </BrowserRouter>
     </div>
   );
